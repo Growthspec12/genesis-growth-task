@@ -1,0 +1,107 @@
+.hexagon-button {
+  --initial-border-color: var(--black-40);
+  --initial-background-color: transparent;
+  --hover-border-color: var(--orange-100);
+  --selected-border-color: var(--orange-100);
+  --selected-background-color: var(--orange-5);
+  --error-border-color: var(--red-100);
+  --error-background-color: var(--red-5);
+  --success-border-color: var(--green-100);
+  --success-background-color: var(--green-5);
+  --base-height: 72px;
+  --min-line-width: 17px;
+
+  display: flex;
+  align-items: center;
+  height: var(--base-height);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.hexagon-button__line {
+  min-width: var(--min-line-width);
+  background: var(--initial-border-color);
+  height: 2px;
+}
+
+.hexagon-button__line:first-child {
+  position: relative;
+  right: -2px;
+}
+
+.hexagon-button__line:last-child {
+  position: relative;
+  left: -2px;
+}
+
+.hexagon-button__box {
+  flex: 1;
+  height: 100%;
+}
+
+.hexagon-button__box path {
+  stroke: var(--initial-border-color);
+}
+
+.hexagon-button:hover:not(
+    .hexagon-button_state_selected,
+    .hexagon-button_state_error,
+    .hexagon-button_state_success
+  )
+  .hexagon-button__line {
+  background-color: var(--hover-border-color);
+}
+
+.hexagon-button:hover:not(
+    .hexagon-button_state_selected,
+    .hexagon-button_state_error,
+    .hexagon-button_state_success
+  )
+  .hexagon-button__box path {
+  stroke: var(--hover-border-color);
+}
+
+.hexagon-button_state_selected .hexagon-button__line {
+  background-color: var(--selected-border-color);
+}
+
+.hexagon-button_state_selected .hexagon-button__box path {
+  stroke: var(--selected-border-color);
+  fill: var(--selected-background-color);
+}
+
+.hexagon-button_state_error .hexagon-button__line {
+  background-color: var(--error-border-color);
+}
+
+.hexagon-button_state_error .hexagon-button__box path {
+  stroke: var(--error-border-color);
+  fill: var(--error-background-color);
+}
+
+.hexagon-button_state_success .hexagon-button__line {
+  background-color: var(--success-border-color);
+}
+
+.hexagon-button_state_success .hexagon-button__box {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hexagon-button_state_success .hexagon-button__box path {
+  stroke: var(--success-border-color);
+  fill: var(--success-background-color);
+}
+
+@media (max-width: 860px) {
+  .hexagon-button {
+    --base-height: 56px;
+  }
+
+  .hexagon-button_state_success .hexagon-button__box {
+    filter: none;
+  }
+
+  .hexagon-button__box {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}

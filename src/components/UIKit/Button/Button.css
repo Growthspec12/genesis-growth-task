@@ -1,0 +1,45 @@
+.button {
+  --base-height: 64px;
+  --base-border-radius: 8px;
+  --primary-inactive-background: var(--orange-100);
+  --primary-hover-background: var(--orange-80);
+  --primary-pressed-background: var(--orange-120);
+  --primary-text-color: var(--white-100);
+
+  outline: none;
+  border: 0;
+  background: none;
+  padding: 0;
+
+  height: var(--base-height);
+  background-color: var(--primary-inactive-background);
+  color: var(--primary-text-color);
+  border-radius: var(--base-border-radius);
+  transition: all 0.2s;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+.button > * {
+  width: 100%;
+}
+
+.button:hover {
+  background-color: var(--primary-hover-background);
+}
+
+.button:active {
+  background-color: var(--primary-pressed-background);
+}
+
+@media screen and (max-width: 860px) {
+  .button {
+    --base-height: 48px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

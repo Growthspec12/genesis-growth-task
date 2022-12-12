@@ -1,0 +1,80 @@
+.step {
+  --base-height: 40px;
+  --step-inactive-border-color: var(--black-40);
+  --step-active-border-color: var(--orange-100);
+
+  --step-previous-text-color: var(--black-40);
+  --step-active-text-color: var(--orange-100);
+  --step-next-text-color: var(--black-100);
+
+  display: flex;
+  align-items: center;
+  height: var(--base-height);
+}
+
+.step__line {
+  flex: 1;
+  height: 1px;
+}
+
+.step__line:first-child {
+  position: relative;
+  right: -2px;
+}
+
+.step__line:last-child {
+  position: relative;
+  left: -2px;
+}
+
+.step__hexagon-box {
+  width: initial;
+  height: 100%;
+  min-width: 240px;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step_state_next .step__line,
+.step_state_previous .step__line {
+  background-color: var(--step-inactive-border-color);
+}
+
+.step_state_next .step__hexagon-box path,
+.step_state_previous .step__hexagon-box path {
+  stroke: var(--step-inactive-border-color);
+}
+
+.step_state_active .step__line {
+  background-color: var(--step-active-border-color);
+}
+
+.step_state_active .step__hexagon-box path {
+  stroke: var(--step-active-border-color);
+}
+
+.step_state_active .step__hexagon-box {
+  color: var(--step-active-text-color);
+}
+
+.step_state_next .step__hexagon-box {
+  color: var(--step-next-text-color);
+}
+
+.step_state_previous .step__hexagon-box {
+  color: var(--step-previous-text-color);
+}
+
+@media screen and (max-width: 860px) {
+  .step {
+    --base-height: 32px;
+  }
+
+  .step__hexagon-box {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

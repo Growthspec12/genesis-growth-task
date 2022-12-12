@@ -1,0 +1,52 @@
+.hamburger-button {
+  outline: none;
+  border: 0;
+  background: none;
+  padding: 0;
+
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+
+  height: 24px;
+  justify-content: center;
+  user-select: none;
+  width: 24px;
+  display: flex;
+  cursor: pointer;
+}
+
+.hamburger-button__line {
+  background: var(--black-100);
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  transform-origin: 2px 2px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  width: 16px;
+}
+
+.hamburger-button__line:first-child {
+  transform-origin: 0% 0%;
+}
+
+.hamburger-button__line:nth-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.hamburger-button_state_clicked .hamburger-button__line {
+  opacity: 1;
+  transform: rotate(-45deg) translate(-6px, 9px);
+  width: 16px;
+}
+
+.hamburger-button_state_clicked .hamburger-button__line:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger-button_state_clicked .hamburger-button__line:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
