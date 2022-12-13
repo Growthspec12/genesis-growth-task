@@ -11,11 +11,21 @@ export interface HexagonButtonProps
   isError: boolean;
   isSuccess: boolean;
   boxClassName?: string;
+  contentClassName?: string;
 }
 
 export const HexagonButton = forwardRef<HTMLButtonElement, HexagonButtonProps>(
   (
-    { children, className, isSelected, isError, isSuccess, ...restButtonProps },
+    {
+      children,
+      className,
+      isSelected,
+      isError,
+      isSuccess,
+      boxClassName,
+      contentClassName,
+      ...restButtonProps
+    },
     ref
   ) => (
     <button
@@ -34,7 +44,12 @@ export const HexagonButton = forwardRef<HTMLButtonElement, HexagonButtonProps>(
       ref={ref}
     >
       <div className="hexagon-button__line" />
-      <HexagonBox className="hexagon-button__box">{children}</HexagonBox>
+      <HexagonBox
+        className={clsx("hexagon-button__box", boxClassName)}
+        contentClassName={contentClassName}
+      >
+        {children}
+      </HexagonBox>
       <div className="hexagon-button__line" />
     </button>
   )

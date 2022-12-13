@@ -7,9 +7,36 @@
   grid-auto-columns: 1fr;
 }
 
+.options-list__item {
+  display: list-item;
+}
+
+.options-list__item,
+.options-list__item::marker {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.options-list__item::marker {
+  font-weight: 600;
+  color: var(--orange-100);
+}
+
+.options-list__item-box {
+  width: 100%;
+  padding: 0 32px 0 56px;
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 860px) {
   .options-list {
     grid-template-columns: 1fr;
     row-gap: 8px;
+  }
+
+  .options-list__item,
+  .options-list__item::marker {
+    font-size: 14px;
+    line-height: 16px;
   }
 }

@@ -24,7 +24,7 @@ export function AnswersList({
     <ol type="A" className={clsx("options-list", className)}>
       {options.map((option, i) => (
         <HexagonButton
-          className="options-list__item"
+          contentClassName="options-list__item-box"
           disabled={correctOptionIndex !== null}
           onClick={() => onOptionClick(i)}
           isSelected={selectedOptionIndex === i}
@@ -42,7 +42,7 @@ export function AnswersList({
               : false
           }
         >
-          {option}
+          <li className="options-list__item">{option}</li>
         </HexagonButton>
       ))}
     </ol>
