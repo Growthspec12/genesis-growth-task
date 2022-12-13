@@ -5,12 +5,13 @@ import Button from "components/UIKit/Button";
 import formatCurrency from "helpers/formatCurrency";
 import { selectScore } from "slices/score/selectors";
 import { resetAnswers } from "slices/questions";
+import { resetScore } from "slices/score";
+import { setGameScreen } from "slices/screens";
+import { ScreenLayout } from "components/ScreenLayout";
 
 import HandImage from "assets/hand.svg";
 
 import "./GameOver.css";
-import { resetScore } from "slices/score";
-import { setGameScreen } from "slices/screens";
 
 function GameOverScreen() {
   const dispatch = useDispatch();
@@ -23,23 +24,25 @@ function GameOverScreen() {
   };
 
   return (
-    <section className="game-over-screen">
-      <div className="game-over-screen__image-container">
-        <img src={HandImage} alt="Hand" className="game-over-screen__image" />
-      </div>
-      <div className="game-over-screen__column-container">
-        <div className="game-over-screen__total-score-text">Total score:</div>
-        <p className="game-over-screen__score">
-          {formatCurrency(score)} earned
-        </p>
-        <Button
-          className="game-over-screen__start-button"
-          onClick={handleTryClick}
-        >
-          Try again
-        </Button>
-      </div>
-    </section>
+    <ScreenLayout>
+      <section className="game-over-screen">
+        <div className="game-over-screen__image-container">
+          <img src={HandImage} alt="Hand" className="game-over-screen__image" />
+        </div>
+        <div className="game-over-screen__column-container">
+          <div className="game-over-screen__total-score-text">Total score:</div>
+          <p className="game-over-screen__score">
+            {formatCurrency(score)} earned
+          </p>
+          <Button
+            className="game-over-screen__start-button"
+            onClick={handleTryClick}
+          >
+            Try again
+          </Button>
+        </div>
+      </section>
+    </ScreenLayout>
   );
 }
 

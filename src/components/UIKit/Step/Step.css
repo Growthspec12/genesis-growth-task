@@ -17,16 +17,6 @@
   height: 1px;
 }
 
-.step__line:first-child {
-  position: relative;
-  right: -2px;
-}
-
-.step__line:last-child {
-  position: relative;
-  left: -2px;
-}
-
 .step__hexagon-box {
   width: initial;
   height: 100%;

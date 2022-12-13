@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 import { HexagonButton } from "components/UIKit/HexagonButton";
 
-import "./OptionsList.css";
+import "./AnswersList.css";
 
 export interface AnswersListProps {
   correctOptionIndex: null | number;

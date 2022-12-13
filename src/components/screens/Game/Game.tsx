@@ -2,11 +2,12 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import clsx from "clsx";
 
-import { AnswersList } from "components/OptionsList";
+import { AnswersList } from "components/AnswersList";
 import { QuestionsStepper } from "components/QuestionsStepper";
 import { HamburgerButton } from "components/UIKit/HamburgerButton";
 import { selectQuestionsState } from "slices/questions/selectors";
 import { checkAnswer, goNextQuestion, setAnswer } from "slices/questions";
+import { ScreenLayout } from "components/ScreenLayout";
 import { addScore } from "slices/score";
 import { setGameOverScreen } from "slices/screens";
 
@@ -66,31 +67,33 @@ export default function GameScreen() {
   }, [shouldCheck]);
 
   return (
-    <section className="game-screen">
-      <HamburgerButton
-        onClick={setStepsListOpen}
-        className="game-screen__steps-list-button"
-      />
-      <div className="game-screen__question-container">
-        <p className="game-screen__question-text">{question.question}</p>
-        <AnswersList
-          onOptionClick={handleOptionClick}
-          options={answers}
-          correctOptionIndex={shouldCheck ? question.correctAnswer : null}
-          selectedOptionIndex={selectedAnswerIndex}
+    <ScreenLayout className="screen-layout_background_black">
+      <section className="game-screen">
+        <HamburgerButton
+          onClick={setStepsListOpen}
+          className="game-screen__steps-list-button"
         />
-      </div>
-      <div
-        className={clsx("game-screen__stepper-wrapper", {
-          "game-screen__stepper-wrapper_state_opened": stepsListOpen,
-        })}
-      >
-        <QuestionsStepper
-          currentQuestion={currentQuestionIndex}
-          prizeFunds={prizeFunds}
-          className="game-screen__stepper"
-        />
-      </div>
-    </section>
+        <div className="game-screen__question-container">
+          <p className="game-screen__question-text">{question.question}</p>
+          <AnswersList
+            onOptionClick={handleOptionClick}
+            options={answers}
+            correctOptionIndex={shouldCheck ? question.correctAnswer : null}
+            selectedOptionIndex={selectedAnswerIndex}
+          />
+        </div>
+        <div
+          className={clsx("game-screen__stepper-wrapper", {
+            "game-screen__stepper-wrapper_state_opened": stepsListOpen,
+          })}
+        >
+          <QuestionsStepper
+            currentQuestion={currentQuestionIndex}
+            prizeFunds={prizeFunds}
+            className="game-screen__stepper"
+          />
+        </div>
+      </section>
+    </ScreenLayout>
   );
 }
