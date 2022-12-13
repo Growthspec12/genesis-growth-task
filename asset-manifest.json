@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/growthspec12.github.io/static/css/main.0114d2bd.css",
-    "main.js": "/growthspec12.github.io/static/js/main.a92a8354.js",
-    "static/js/787.f04334d4.chunk.js": "/growthspec12.github.io/static/js/787.f04334d4.chunk.js",
-    "static/media/hand.svg": "/growthspec12.github.io/static/media/hand.dbb74bc402dc07b02a0d5ab983fa9354.svg",
-    "index.html": "/growthspec12.github.io/index.html",
-    "static/media/HexagonShape.svg": "/growthspec12.github.io/static/media/HexagonShape.2e920d0df2dfd1599c6129fb4bc87db2.svg",
-    "main.0114d2bd.css.map": "/growthspec12.github.io/static/css/main.0114d2bd.css.map",
-    "main.a92a8354.js.map": "/growthspec12.github.io/static/js/main.a92a8354.js.map",
-    "787.f04334d4.chunk.js.map": "/growthspec12.github.io/static/js/787.f04334d4.chunk.js.map"
+    "main.css": "/static/css/main.0114d2bd.css",
+    "main.js": "/static/js/main.80daf951.js",
+    "static/js/787.f04334d4.chunk.js": "/static/js/787.f04334d4.chunk.js",
+    "static/media/hand.svg": "/static/media/hand.dbb74bc402dc07b02a0d5ab983fa9354.svg",
+    "index.html": "/index.html",
+    "static/media/HexagonShape.svg": "/static/media/HexagonShape.2e920d0df2dfd1599c6129fb4bc87db2.svg",
+    "main.0114d2bd.css.map": "/static/css/main.0114d2bd.css.map",
+    "main.80daf951.js.map": "/static/js/main.80daf951.js.map",
+    "787.f04334d4.chunk.js.map": "/static/js/787.f04334d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0114d2bd.css",
-    "static/js/main.a92a8354.js"
+    "static/js/main.80daf951.js"
   ]
 }
