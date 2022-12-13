@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import clsx from "clsx";
 
 import { Step } from "components/UIKit/Step";
-import { formatCurrency } from "helpers/formatCurrency";
-import { makeAscendingOrder } from "helpers/makeAscendingOrder";
+import formatCurrency from "helpers/formatCurrency";
+import makeAscendingOrder from "helpers/makeAscendingOrder";
 
 import "./QuestionsStepper.css";
 
@@ -13,16 +13,18 @@ export interface QuestionsStepperProps {
   className?: string;
 }
 
-export const QuestionsStepper: FunctionComponent<QuestionsStepperProps> = ({
+export function QuestionsStepper({
   prizeFunds,
   currentQuestion,
   className,
-}) => (
-  <div className={clsx("questions-stepper", className)}>
-    {makeAscendingOrder(prizeFunds).map((prize, i) => (
-      <Step currentStep={i} activeStep={currentQuestion} key={`${prize}`}>
-        {formatCurrency(prize)}
-      </Step>
-    ))}
-  </div>
-);
+}: QuestionsStepperProps) {
+  return (
+    <div className={clsx("questions-stepper", className)}>
+      {makeAscendingOrder(prizeFunds).map((prize, i) => (
+        <Step currentStep={i} activeStep={currentQuestion} key={`${prize}`}>
+          {formatCurrency(prize)}
+        </Step>
+      ))}
+    </div>
+  );
+}

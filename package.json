@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --fix",
+    "prettier": "prettier --write",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -48,9 +49,18 @@
     ]
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,html}": "npm run lint"
+    "src/**/*.{ts,tsx,html}": "npm run lint",
+    "src/**/*.{ts,tsx,html,css}": "npm run prettier"
   },
   "devDependencies": {
-    "husky": "^8.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.1"
   }
 }

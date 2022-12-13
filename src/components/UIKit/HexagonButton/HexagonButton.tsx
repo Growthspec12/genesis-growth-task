@@ -19,7 +19,9 @@ export const HexagonButton = forwardRef<HTMLButtonElement, HexagonButtonProps>(
     ref
   ) => (
     <button
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...restButtonProps}
+      type="button"
       className={clsx(
         "hexagon-button",
         {

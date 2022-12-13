@@ -1,2 +1,3 @@
-export const makeAscendingOrder = (array: number[]) =>
-  array.sort((a, b) => a - b);
+export default function makeAscendingOrder(array: number[]) {
+  return array.sort((a, b) => a - b);
+}

@@ -1,1 +1,3 @@
-export * from "./Start";
+import StartScreen from "./Start";
+
+export default StartScreen;

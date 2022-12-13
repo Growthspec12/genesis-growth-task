@@ -12,7 +12,7 @@ import { setGameOverScreen } from "slices/screens";
 
 import "./Game.css";
 
-export const GameScreen = () => {
+export default function GameScreen() {
   const [stepsListOpen, setStepsListOpen] = useState(false);
 
   const dispatch = useDispatch();
@@ -60,6 +60,8 @@ export const GameScreen = () => {
 
       return () => clearTimeout(timerId);
     }
+
+    return undefined;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shouldCheck]);
 
@@ -86,9 +88,9 @@ export const GameScreen = () => {
         <QuestionsStepper
           currentQuestion={currentQuestionIndex}
           prizeFunds={prizeFunds}
-          className={"game-screen__stepper"}
+          className="game-screen__stepper"
         />
       </div>
     </section>
   );
-};
+}

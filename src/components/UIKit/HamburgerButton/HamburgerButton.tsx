@@ -1,17 +1,14 @@
 import clsx from "clsx";
-import React, { FunctionComponent, useState } from "react";
+import React, { useState } from "react";
 
 import "./HamburgerButton.css";
 
-interface HamburgerButtonProps {
+export interface HamburgerButtonProps {
   onClick?: (state: boolean) => void;
   className?: string;
 }
 
-export const HamburgerButton: FunctionComponent<HamburgerButtonProps> = ({
-  onClick,
-  className,
-}) => {
+export function HamburgerButton({ onClick, className }: HamburgerButtonProps) {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -23,6 +20,7 @@ export const HamburgerButton: FunctionComponent<HamburgerButtonProps> = ({
 
   return (
     <button
+      type="button"
       className={clsx(
         "hamburger-button",
         {
@@ -37,4 +35,4 @@ export const HamburgerButton: FunctionComponent<HamburgerButtonProps> = ({
       <div className="hamburger-button__line" />
     </button>
   );
-};
+}

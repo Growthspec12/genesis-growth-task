@@ -1,14 +1,14 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
-import { Button } from "components/UIKit/Button";
+import Button from "components/UIKit/Button";
 import { setGameScreen } from "slices/screens";
 
 import HandImage from "assets/hand.svg";
 
 import "./Start.css";
 
-export const StartScreen = () => {
+export default function StartScreen() {
   const dispatch = useDispatch();
 
   const handleStartClick = () => {
@@ -33,4 +33,4 @@ export const StartScreen = () => {
       </div>
     </section>
   );
-};
+}

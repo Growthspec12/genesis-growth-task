@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Button } from "components/UIKit/Button";
+import Button from "components/UIKit/Button";
+import formatCurrency from "helpers/formatCurrency";
 import { selectScore } from "slices/score/selectors";
-import { formatCurrency } from "helpers/formatCurrency";
 import { resetAnswers } from "slices/questions";
 
 import HandImage from "assets/hand.svg";
@@ -12,7 +12,7 @@ import "./GameOver.css";
 import { resetScore } from "slices/score";
 import { setGameScreen } from "slices/screens";
 
-export const GameOverScreen = () => {
+function GameOverScreen() {
   const dispatch = useDispatch();
   const score = useSelector(selectScore);
 
@@ -41,4 +41,6 @@ export const GameOverScreen = () => {
       </div>
     </section>
   );
-};
+}
+
+export default GameOverScreen;
