@@ -45,6 +45,13 @@ export default function GameScreen() {
   );
 
   useEffect(() => {
+    // eslint-disable-next-line no-alert
+    alert(
+      "Instructions:\n1. Tap for choosing your answer\n2. If you are sure, tap to selected answer one more time"
+    );
+  }, []);
+
+  useEffect(() => {
     const updateGameStatus = () => {
       if (isAnswerCorrect) {
         dispatch(goNextQuestion());

@@ -2,85 +2,90 @@
   {
     "id": 0,
     "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "options": ["English", "Polish", "JavaScript", "Turkish"],
+    "correctAnswer": 2,
     "prizeFund": 500
   },
   {
     "id": 1,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "question": "Which of the following function of String object returns the character at the specified index?",
+    "options": ["charAt()", "charCodeAt()", "concat()", "indexOf()"],
     "correctAnswer": 0,
     "prizeFund": 1000
   },
   {
     "id": 2,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "What property is used to change the text color of an element?",
+    "options": ["fontcolor", "color", "textcolor", "changecolor"],
+    "correctAnswer": 1,
     "prizeFund": 2000
   },
   {
     "id": 3,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "question": "var a = []; What does 'typeof a' return?",
+    "options": ["object", "string", "array", "undefined"],
     "correctAnswer": 0,
     "prizeFund": 4000
   },
   {
     "id": 4,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "Which is not a JavaScript data type?",
+    "options": ["boolean", "string", "double", "undefined"],
+    "correctAnswer": 2,
     "prizeFund": 8000
   },
   {
     "id": 5,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "Which HTML5 element defines navigation links?",
+    "options": ["navigation", "links", "a", "nav"],
+    "correctAnswer": 3,
     "prizeFund": 16000
   },
   {
     "id": 6,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "What keyword is used to create a JavaScript variable",
+    "options": ["variable", "varies", "string", "var"],
+    "correctAnswer": 3,
     "prizeFund": 32000
   },
   {
     "id": 7,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "The # symbol specifies that the selector is?",
+    "options": ["class", "tag", "id", "first"],
+    "correctAnswer": 2,
     "prizeFund": 64000
   },
   {
     "id": 8,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "options": ["script", "javascript", "JS", "link"],
     "correctAnswer": 0,
     "prizeFund": 125000
   },
   {
     "id": 9,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "Which snippet of CSS is commonly used to center a website horizontally?",
+    "options": [
+      "site-align: center;",
+      "margin: center;",
+      "margin: auto 0;",
+      "margin: 0 auto;"
+    ],
+    "correctAnswer": 3,
     "prizeFund": 250000
   },
   {
     "id": 10,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "Which doctype is correct for HTML5?",
+    "options": ["!DOCTYPE HTML5", "!DOCTYPE html", "!DOCTYPE", "!DOCTYPE css"],
+    "correctAnswer": 1,
     "prizeFund": 500000
   },
   {
     "id": 11,
-    "question": "What language works in Chrome natively?",
-    "options": ["JavaScript", "TypeScript", "Java", "C++"],
-    "correctAnswer": 0,
+    "question": "What value is given for the left margin: margin: 5px 10px 3px 8px;",
+    "options": ["5px", "8px", "3px", "10px"],
+    "correctAnswer": 1,
     "prizeFund": 1000000
   }
 ]
