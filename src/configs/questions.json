@@ -1,0 +1,86 @@
+[
+  {
+    "id": 0,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 500
+  },
+  {
+    "id": 1,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 1000
+  },
+  {
+    "id": 2,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 2000
+  },
+  {
+    "id": 3,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 4000
+  },
+  {
+    "id": 4,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 8000
+  },
+  {
+    "id": 5,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 16000
+  },
+  {
+    "id": 6,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 32000
+  },
+  {
+    "id": 7,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 64000
+  },
+  {
+    "id": 8,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 125000
+  },
+  {
+    "id": 9,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 250000
+  },
+  {
+    "id": 10,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 500000
+  },
+  {
+    "id": 11,
+    "question": "What language works in Chrome natively?",
+    "options": ["JavaScript", "TypeScript", "Java", "C++"],
+    "correctAnswer": 0,
+    "prizeFund": 1000000
+  }
+]

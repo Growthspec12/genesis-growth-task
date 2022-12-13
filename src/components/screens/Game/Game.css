@@ -1,0 +1,81 @@
+.game-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--black-5);
+  position: relative;
+}
+
+.game-screen__question-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 132px 80px 100px;
+  flex: 1;
+}
+
+.game-screen__stepper-wrapper {
+  width: 376px;
+  height: 100%;
+  background-color: var(--white-100);
+  display: flex;
+  overflow: auto;
+}
+
+.game-screen__stepper {
+  width: 100%;
+  margin: auto 0;
+  padding: 20px 0;
+}
+
+.game-screen__question-text {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  margin: 0;
+}
+
+.game-screen__steps-list-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .game-screen__question-container {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .game-screen__question-container {
+    padding: 136px 0 24px;
+  }
+
+  .game-screen__steps-list-button {
+    display: flex !important;
+    z-index: 1;
+  }
+
+  .game-screen__question-text {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .game-screen__stepper-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 0;
+    padding-top: 64px;
+  }
+
+  .game-screen__stepper-wrapper_state_opened {
+    display: flex;
+  }
+}

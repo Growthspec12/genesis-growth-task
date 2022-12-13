@@ -1,0 +1,6 @@
+.questions-stepper {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  align-items: stretch;
+  gap: 8px;
+}

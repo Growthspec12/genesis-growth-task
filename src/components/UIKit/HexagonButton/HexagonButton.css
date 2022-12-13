@@ -1,6 +1,6 @@
 .hexagon-button {
   --initial-border-color: var(--black-40);
-  --initial-background-color: transparent;
+  --initial-background-color: var(--white-100);
   --hover-border-color: var(--orange-100);
   --selected-border-color: var(--orange-100);
   --selected-background-color: var(--orange-5);
@@ -16,6 +16,10 @@
   height: var(--base-height);
   box-sizing: border-box;
   cursor: pointer;
+  outline: none;
+  border: 0;
+  background: none;
+  padding: 0;
 }
 
 .hexagon-button__line {
@@ -41,6 +45,7 @@
 
 .hexagon-button__box path {
   stroke: var(--initial-border-color);
+  fill: var(--initial-background-color);
 }
 
 .hexagon-button:hover:not(
@@ -57,7 +62,8 @@
     .hexagon-button_state_error,
     .hexagon-button_state_success
   )
-  .hexagon-button__box path {
+  .hexagon-button__box
+  path {
   stroke: var(--hover-border-color);
 }
 
